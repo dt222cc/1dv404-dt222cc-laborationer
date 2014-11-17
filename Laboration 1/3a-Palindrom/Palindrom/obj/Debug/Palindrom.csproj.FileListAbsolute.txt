@@ -1,0 +1,12 @@
+C:\Users\Da-Sing\dt222cc\1dv404-Lab 1\3a\Palindrom\Palindrom\bin\Debug\Palindrom.exe.config
+C:\Users\Da-Sing\dt222cc\1dv404-Lab 1\3a\Palindrom\Palindrom\bin\Debug\Palindrom.exe
+C:\Users\Da-Sing\dt222cc\1dv404-Lab 1\3a\Palindrom\Palindrom\bin\Debug\Palindrom.pdb
+C:\Users\Da-Sing\dt222cc\1dv404-Lab 1\3a\Palindrom\Palindrom\obj\Debug\Palindrom.csprojResolveAssemblyReference.cache
+C:\Users\Da-Sing\dt222cc\1dv404-Lab 1\3a\Palindrom\Palindrom\obj\Debug\Palindrom.exe
+C:\Users\Da-Sing\dt222cc\1dv404-Lab 1\3a\Palindrom\Palindrom\obj\Debug\Palindrom.pdb
+C:\Users\Da-Sing\dt222cc\1dv404-dt222cc-laborationer\Laboration 1\3a-Palindrom\Palindrom\bin\Debug\Palindrom.exe.config
+C:\Users\Da-Sing\dt222cc\1dv404-dt222cc-laborationer\Laboration 1\3a-Palindrom\Palindrom\obj\Debug\Palindrom.exe
+C:\Users\Da-Sing\dt222cc\1dv404-dt222cc-laborationer\Laboration 1\3a-Palindrom\Palindrom\obj\Debug\Palindrom.pdb
+C:\Users\Da-Sing\dt222cc\1dv404-dt222cc-laborationer\Laboration 1\3a-Palindrom\Palindrom\bin\Debug\Palindrom.exe
+C:\Users\Da-Sing\dt222cc\1dv404-dt222cc-laborationer\Laboration 1\3a-Palindrom\Palindrom\bin\Debug\Palindrom.pdb
+C:\Users\Da-Sing\dt222cc\1dv404-dt222cc-laborationer\Laboration 1\3a-Palindrom\Palindrom\obj\Debug\Palindrom.csprojResolveAssemblyReference.cache

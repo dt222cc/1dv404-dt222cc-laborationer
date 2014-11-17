@@ -1,0 +1,8 @@
+C:\Users\Da-Sing\dt222cc\1dv404-Lab 1\3b\Fraction\Fraction\bin\Debug\Fraction.exe.config
+C:\Users\Da-Sing\dt222cc\1dv404-Lab 1\3b-Fraction\Fraction\bin\Debug\Fraction.exe.config
+C:\Users\Da-Sing\dt222cc\1dv404-dt222cc-laborationer\Laboration 1\3b-Fraction\Fraction\bin\Debug\Fraction.exe.config
+C:\Users\Da-Sing\dt222cc\1dv404-dt222cc-laborationer\Laboration 1\3b-Fraction\Fraction\bin\Debug\Fraction.exe
+C:\Users\Da-Sing\dt222cc\1dv404-dt222cc-laborationer\Laboration 1\3b-Fraction\Fraction\bin\Debug\Fraction.pdb
+C:\Users\Da-Sing\dt222cc\1dv404-dt222cc-laborationer\Laboration 1\3b-Fraction\Fraction\obj\Debug\Fraction.csprojResolveAssemblyReference.cache
+C:\Users\Da-Sing\dt222cc\1dv404-dt222cc-laborationer\Laboration 1\3b-Fraction\Fraction\obj\Debug\Fraction.exe
+C:\Users\Da-Sing\dt222cc\1dv404-dt222cc-laborationer\Laboration 1\3b-Fraction\Fraction\obj\Debug\Fraction.pdb
