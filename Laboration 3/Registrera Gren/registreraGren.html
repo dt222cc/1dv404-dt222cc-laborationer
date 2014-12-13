@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+    	<meta charset="UTF-8" />
+     	<title>Registrera Gren</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    
+    <body>
+        <div id="container">
+            <header>
+                <h1>Registrera gren</h1>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Välj annan deltävling</a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div id="main">
+                    
+                    <div id="grenar">
+                        <ul id="grenID">
+                            <li id="gren1">
+                                <dt>1. Balansbom</dt>
+                                <dd>Antal deltagare: 10</dd>
+                            </li>
+                            <li id="gren2">
+                                <dt>Hopp</dt>
+                                <dd>Antal deltagare: </dd>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <form>
+                        <fieldset>
+                            <legend>Registrera ny gren</legend>
+                            
+                            <label for="nummer">Nummer:</label> <br />
+                            <input type="text" name="nummer" id="number" /> <br />
+                            
+                            <label for="namn">Namn:</label> <br />
+                            <input type="text" name="namn" id="name" /> <br />
+                            
+                            <label for="storlek">Antal deltagare:</label> <br />
+                            <input type="text" name="storlek" id="size" /> <br />
+                            
+                            <input type="button" id="register" value="Registrera" />
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+        </div>
+        
+        <script type="text/javascript" src="script/registreraGren.js"></script>
+    </body>
+</html>
