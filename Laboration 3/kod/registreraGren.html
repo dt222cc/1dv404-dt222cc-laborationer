@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+    	<meta charset="UTF-8" />
+     	<title>Registrera Gren</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    
+    <body>
+        <div id="container">
+            <h1>Registrera gren</h1>
+
+            <div id="main">
+                <ul id="grenar">
+                    <!--<li id="Test">-->
+                    <!--    <dt id="TestP>Test</dt>-->
+                    <!--    <dd id="TestAntal">Antal deltagare: 2</dd>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+                
+            <form>
+                <input type="button" id="edit" value="Redigera gren: test" />
+                
+                <fieldset>
+                    <legend>Registrera ny gren (funkar inte ännu)</legend>
+                    
+                    <label for="namn">Namn:</label> <br />
+                    <input type="text" name="namn" id="name" /> <br />
+                    
+                    <label for="storlek">Antal deltagare:</label> <br />
+                    <input type="text" name="storlek" id="size" /> <br />
+                    
+                    <input type="button" id="register" value="Registrera" />
+                </fieldset>
+            </form>
+        </div>
+        
+        <script type="text/javascript" src="script/redigeraGren.js"></script>
+        <script type="text/javascript" src="script/registreraGren.js"></script>
+        <script type="text/javascript" src="script/testkod.js"></script>
+    </body>
+</html>
