@@ -1,13 +1,13 @@
-1dv404-dt222cc-laborationer
+Repo för laboration 3
 ===========================
 
-Repo för laboration 3
+Sammanställningen: version1+, högre siffra betyder att den är nyare.
 
-Sammanställningen finns i dokument, högre siffra betyder att den är nyare.
+Uppgift 1: dokument/1.Tidsplanering.ods
 
-Uppgift  : sökväg
+Uppgift 2: dokument/2.Testplan.ods
 
-Uppgift 1: dokument/1</ br>
-Uppgift 2: dokument/2</ br>
-Uppgift 3: dokument/3 och kod:registreraGren, redigeraGren</ br>
-Uppgift 4: kod:testsvits, testkod</ br>
+Uppgift 3: dokument/3.UC7... och i mappen kod:registreraGren.js & redigeraGren.js
+
+Uppgift 4: kod:testsvits.js & testkod.js
+
