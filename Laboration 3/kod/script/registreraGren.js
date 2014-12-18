@@ -1,61 +1,39 @@
 "use strict";
 
-/*
- * Klassen RegistreraGren
- * Tar emot två parametrar, namn och storlek
- */
-function RegistreraGren(name, size) {
+// Klassen RegistreraGren
+function RegistreraGren(array, name, size) {
     var grenObject = {name: name, size: size};
-    
-    this.finnsRedan(grenObject);
+    return finnsRedan(grenObject, array);
 }
 
-RegistreraGren.prototype.finnsRedan = function(object) {
+// RegistreraGren.prototype.finnsRedan = function(object, array) { // Utan QUnit
+function finnsRedan(object, array) { // För QUnit
+    var count = 0;
     
-    var check = document.getElementById(object.name);
+    for (var i in array) {
+        if (object.name === array[i].name) {
+            console.log("Grenen " + object.name + " finns redan!");
+            break;
+        }
+        else if (object.name === undefined) {
+            console.log("Grenen har inga värden. Gren registreras inte.");
+            break;
+        }
+        else {
+            count++;
+        }
+    }
     
-    if (check === null) {
-        console.log("Grenen " + object.name + " finns inte. Skapar grenen."); // Om grenen inte finns så skapas grenen
-        this.skapaGren(object);
+    // Grenen finns inte, registrera gren till array
+    if (count === array.length) {
+        array.push(object);
     }
-    else {
-        console.log("Grenen " + object.name + " finns redan!"); // Grenen finns redan
-    }
-};
+    
+    renderaGrenar(array); // this.renderaGrenar(array);
+    return array;
+}
 
-// Renderar grenen till documentet
-RegistreraGren.prototype.skapaGren = function(grenen) {
-    
-    var grenar = document.getElementById("grenar");
-    var li = document.createElement("li");
-    var dt = document.createElement("dt");
-    var dd = document.createElement("dd");
-    var img = document.createElement("img");
-    var img2 = document.createElement("img");
-    var a = document.createElement("a");
-    var a2 = document.createElement("a");
-    
-    li.id = grenen.name;
-    dt.id = grenen.name + "P";
-    dd.id = grenen.name + "Antal";
-    dt.innerHTML = grenen.name;
-    dd.innerHTML = "Antal deltagare: " + grenen.size;
-    
-    img.src = "pics/delete.png";
-    img2.src = "pics/clock.png"; // använder om bilden (ska vara en redigera bild)
-    a.setAttribute("href", "#");
-    a2.setAttribute("href", "#");
-    
-    a.onclick = function() {
-        grenar.removeChild(li);
-    };
-    
-    a2.onclick = function() {
-        // new RedigeraGren();
-    };
-    
-    a.appendChild(img), a2.appendChild(img2);
-    dt.appendChild(a), dt.appendChild(a2);
-    li.appendChild(dt), li.appendChild(dd);
-    grenar.appendChild(li);
-};
+// RegistreraGren.prototype.renderaGrenar = function(array) {
+function renderaGrenar(array) {
+    // Tänkt att alla objekt i arrayen ska renderas på html dokumentet. (kanske som seperat klass)
+}

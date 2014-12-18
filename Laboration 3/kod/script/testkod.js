@@ -1,42 +1,33 @@
 "use strict";
 
-/*
- * Testkod/Testfall
- */
+// Testkod
 window.onload = function(){
     
-    /*
-     * Testfall 1: skapa en ny gren.
-     * Dessa ska rendera nya grenar i dokumentet.
-     */
-    new RegistreraGren("Balansbom", "10");
-    new RegistreraGren("Barr", "12");
-    new RegistreraGren("Test", "6");
+    // testdata
+    var indata = [{name: "Bom", size: "10"}, {name: "Hopp", size: "12"}];
+    var result1 = [{name: "Bom", size: "10"}, {name: "Hopp", size: "12"}, {name: "Barr", size: "6"}];
     
-    /*
-     * Testfall 2: Gren finns redan
-     * När grenen redan finns så meddelas detta och grenen skapas inte.
-     */
-    new RegistreraGren("Test", "8"); // Skapas inte
+    // Testfall 1: Lägg till ny gren.
+    var test1 = new RegistreraGren(indata, "Barr", "6");
+    if (test1 === result1) {
+        console.log("test 1, ok");
+    } else {
+        console.log("test 1, fail");
+        console.log(test1);
+        console.log(result1);
+    }
+
+    // Testfall 2: Gren finns redan
+    var test2 = new RegistreraGren(indata, "Bom", "10");
+    if (test2 === indata) { // <-
+        console.log("test 2, ok");
+    } else {
+        console.log("test 2, fail");
+    }
     
-    /*
-     * Testfall 3: Redigera gren
-     * Väljer användaren att redigera gren så byts det gamla mot det nya.
-     */
-    var edit = document.getElementById("edit");
-    edit.onclick = function() {
-        new RedigeraGren("Balansbom", "10", "Hopp", "14");
-        new RedigeraGren("Barr", "12", "Fristående", "8");
-        
-        /*
-         * Resultat: De nya grenarna blir
-         *  Hopp, 14
-         *  Fristående, 8
-         *  Test, 6
-         */
-    };
-    
-    /*
-     * Testfall
-     */
+    // Testfall 3: Redigera grenar
+    var test3 = new RedigeraGren(indata, "Bom", "Fristående", "8");
+    var test3b = new RedigeraGren(indata, "Hopp", "Ringar", "8");
+    console.log(test3);
+    console.log(test3b);
 };
