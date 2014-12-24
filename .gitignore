@@ -1,4 +1,2 @@
-#Ignore all .c9 specific files<br>
-/.c9/
-; .c9revisions/
-; .c9/
+.c9revisions/
+.c9/
