@@ -52,10 +52,10 @@ Initiering: Användaren klickar på registrera ny användare/gymnast
 
 ------
 ## Design
-| Klass: Person                                                                                    | Klass: Validate                                                             |
-|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| Klass: Person                                      | Klass: Validate                                                             |
+|----------------------------------------------------|-----------------------------------------------------------------------------|
 | personData: {    firstName: String,    lastName: String,    email: String,    password: String } | data: {    email: String,    pw1: String,    pw2: String } isVerified:,bool |
-| addUser(personData)                                                                              | validateData(data) validateEmail(email) validatePW(pw1,,pw2)                |
+| addUser(personData)                                | validateData(data) validateEmail(email) validatePW(pw1,,pw2)                |
 
 ------
 ## Test: Klassen Person och Validate
