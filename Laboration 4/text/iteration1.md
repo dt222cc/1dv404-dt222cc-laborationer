@@ -54,8 +54,8 @@ Initiering: Användaren klickar på registrera ny användare/gymnast
 ## Design
 | Klass: Person                                      | Klass: Validate                                                             |
 |----------------------------------------------------|-----------------------------------------------------------------------------|
-| personData: {    firstName: String,    lastName: String,    email: String,    password: String } | data: {    email: String,    pw1: String,    pw2: String } isVerified:,bool |
-| addUser(personData)                                | validateData(data) validateEmail(email) validatePW(pw1,,pw2)                |
+| personData: {    <br>firstName: String, <br>   lastName: String,   <br> email: String,  <br>  password: String } | data: {   <br> email: String, <br>   pw1: String,   <br> pw2: String }<br> isVerified:,bool |
+| addUser(personData)                                | validateData(data)<br>validateEmail(email)<br>validatePW(pw1,,pw2)                |
 
 ------
 ## Test: Klassen Person och Validate
@@ -63,19 +63,19 @@ Initiering: Användaren klickar på registrera ny användare/gymnast
 ------
 | Test | Metod                              | Testfall                                                                     | Förväntad resultat |
 |------|------------------------------------|------------------------------------------------------------------------------|--------------------|
-| #1   | Lägg till ny person                | Förnamn: Sing Efternamn: Trinh E-post: dt222cc@student.lnu.se Lösenord: 1234 |        true        |
-| #2   | Validering av data, korrekt format | E-post: dt222cc@student.lnu.se Lösenord 1: 1234 Lösenord 2: 1234             |        true        |
-| #3   | Validering av data, fel email      | dt222ccstudent.lnu.se @gmail.com dt222cc@ ""                                 |        false       |
-| #4   | Validering av data, fel lösenord   | 1234, 2345 1234, ""  "", 1234 "", ""                                         |        false       |
+| #1   | Lägg till ny person                | Förnamn: Sing <br>Efternamn: Trinh <br>E-post: dt222cc@student.lnu.se <br>Lösenord: 1234 |        true        |
+| #2   | Validering av data, korrekt format | E-post: dt222cc@student.lnu.se <br>Lösenord 1: 1234 <br>Lösenord 2: 1234             |        true        |
+| #3   | Validering av data, fel email      | dt222ccstudent.lnu.se <br>@gmail.com <br>dt222cc@ <br>""                                 |        false       |
+| #4   | Validering av data, fel lösenord   | 1234, 2345 <br>1234, "" <br>"", 1234 <br>"", ""                                         |        false       |
 
 ------
 ## Testdata:
 | Test | Testansvarig |                Metod               | Förväntad resultat | Verklig resultat | Godkänt/ Underkänt |
 |:----:|:------------:|:----------------------------------:|:------------------:|:----------------:|:------------------:|
-|  #1  |    dt222cc   | Lägg till ny person                |        true        |       true       |       Godkänt      |
-|  #2  |    dt222cc   | Validering av data, korrekt format |        true        |       true       |       Godkänt      |
-|  #3  |    dt222cc   | Validering av data, fel e-post     |        false       |       false      |       Godkänt      |
-|  #4  |    dt222cc   | Validering av data, fel lösenord   |        false       |       false      |       Godkänt      |
+|  #1  |    dt222cc   |Lägg till ny person                 |        true        |       true       |       Godkänt      |
+|  #2  |    dt222cc   |Validering av data, korrekt format  |        true        |       true       |       Godkänt      |
+|  #3  |    dt222cc   |Validering av data, fel e-post      |        false       |       false      |       Godkänt      |
+|  #4  |    dt222cc   |Validering av data, fel lösenord    |        false       |       false      |       Godkänt      |
 
 ------
 ##Källkod:
