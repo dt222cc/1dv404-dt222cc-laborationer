@@ -62,7 +62,7 @@ Initiering: Användaren klickar på registrera ny användare/gymnast
 
 ------
 | Test | Metod                              | Testfall                                                                                  | Förväntad resultat |
-|------|------------------------------------|-------------------------------------------------------------------------------------------|--------------------|
+|:----:|------------------------------------|-------------------------------------------------------------------------------------------|:------------------:|
 | #1   | Lägg till ny person                | Förnamn: Sing <br>Efternamn: Trinh <br>E-post: dt222cc@student.lnu.se <br>Lösenord: 1234  |        true        |
 | #2   | Validering av data, korrekt format | E-post: dt222cc@student.lnu.se <br>Lösenord 1: 1234 <br>Lösenord 2: 1234                  |        true        |
 | #3   | Validering av data, fel email      | dt222ccstudent.lnu.se <br>@gmail.com <br>dt222cc@ <br>""                                  |        false       |
@@ -71,7 +71,7 @@ Initiering: Användaren klickar på registrera ny användare/gymnast
 ------
 ## Testdata:
 | Test | Testansvarig |                Metod               | Förväntad resultat | Verklig resultat | Godkänt/ Underkänt |
-|:----:|:------------:|:----------------------------------:|:------------------:|:----------------:|:------------------:|
+|:----:|:------------:|------------------------------------|:------------------:|:----------------:|:------------------:|
 |  #1  |    dt222cc   |Lägg till ny person                 |        true        |       true       |       Godkänt      |
 |  #2  |    dt222cc   |Validering av data, korrekt format  |        true        |       true       |       Godkänt      |
 |  #3  |    dt222cc   |Validering av data, fel e-post      |        false       |       false      |       Godkänt      |
