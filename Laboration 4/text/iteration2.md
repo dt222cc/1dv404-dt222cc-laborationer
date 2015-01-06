@@ -56,7 +56,7 @@ Post-villkor: Laget registrerad
 ## Design
 | Klass: League             | Klass: Team                            |
 |---------------------------|----------------------------------------|
-| teams: [\*]<br>teams: [*] | teamName: String<br>teamLeader: Person |
+| teams: [*]                | teamName: String<br>teamLeader: Person |
 | addTeam()<br>removeTeam() |                                        |
 
 ------
@@ -79,7 +79,7 @@ Post-villkor: Laget registrerad
 
 ------
 ## Källkod:
-Källkod finns i mappen "testkod" i iterationsmappen "1".
+Källkod finns i iterationsmappen.<br>
 https://github.com/dt222cc/1dv404-dt222cc-laborationer/tree/master/Laboration%204/iteration1
 
 ## Kort motivering/reflektion:

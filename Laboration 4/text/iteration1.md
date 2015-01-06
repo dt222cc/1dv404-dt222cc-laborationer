@@ -79,5 +79,5 @@ Initiering: Användaren klickar på registrera ny användare/gymnast
 
 ------
 ##Källkod:
-Källkod finns i mappen "testkod" i iterationsmappen "1".
+Källkod finns i iterationsmappen.<br>
 https://github.com/dt222cc/1dv404-dt222cc-laborationer/tree/master/Laboration%204/iteration1
