@@ -12,7 +12,7 @@ Implementering av registrering av ny användare/gymnast.
 
 #### Design/Implementation
 * Identifiera klasser: 45 min
-* Specificera klasser: 1 min
+* Specificera klasser: 1 h
 * Implementation: 2 h
 
 #### Test
@@ -24,7 +24,7 @@ Implementering av registrering av ny användare/gymnast.
 #### Reflektion
 * Reflektera: 1 h
 
-#### Totalt: 10 h
+#### Totalt: 9 h
 
 ------
 ## Flöden:
@@ -54,8 +54,8 @@ Initiering: Användaren klickar på registrera ny användare/gymnast
 ## Design
 | Klass: Person                                      | Klass: Validate                                                             |
 |----------------------------------------------------|-----------------------------------------------------------------------------|
-| personData: { <br>   firstName: String, <br>   lastName: String, <br>   email: String, <br>   password: String <br>} | data: { <br>   email: String, <br>   pw1: String, <br>   pw2: String <br>}<br><br> isVerified:,bool |
-| addUser(personData)                                | validateData(data)<br>validateEmail(email)<br>validatePW(pw1,,pw2)                |
+| firstName: String,<br>lastName: String,<br>email: String,<br>password: String | email: String,<br>pw1: String,<br>pw2: String<br>isVerified: bool |
+|                                                    | validateData(data)<br>validateEmail(email)<br>validatePW(pw1, pw2)          |
 
 ------
 ## Test: Klassen Person och Validate
@@ -63,20 +63,21 @@ Initiering: Användaren klickar på registrera ny användare/gymnast
 ------
 | Test | Metod                              | Testfall                                                                                  | Förväntad resultat |
 |:----:|------------------------------------|-------------------------------------------------------------------------------------------|:------------------:|
-| #1   | Lägg till ny person                | Förnamn: Sing <br>Efternamn: Trinh <br>E-post: dt222cc@student.lnu.se <br>Lösenord: 1234  |        true        |
-| #2   | Validering av data, korrekt format | E-post: dt222cc@student.lnu.se <br>Lösenord 1: 1234 <br>Lösenord 2: 1234                  |        true        |
-| #3   | Validering av data, fel email      | dt222ccstudent.lnu.se <br>@gmail.com <br>dt222cc@ <br>""                                  |        false       |
-| #4   | Validering av data, fel lösenord   | 1234, 2345 <br>1234, "" <br>"", 1234 <br>"", ""                                           |        false       |
+|  #1  | Lägg till ny person                | Förnamn: Sing <br>Efternamn: Trinh <br>E-post: dt222cc@student.lnu.se <br>Lösenord: 1234  |        true        |
+|  #2  | Validering av data, korrekt format | E-post: dt222cc@student.lnu.se <br>Lösenord 1: 1234 <br>Lösenord 2: 1234                  |        true        |
+|  #3  | Validering av data, fel email      | 1.   dt222ccstudent.lnu.se <br>2.   @gmail.com <br>3.   dt222cc@ <br>4.   ""              |        false       |
+|  #4  | Validering av data, fel lösenord   | 1.   1234, 2345 <br>2.   1234, "" <br>3.   "", 1234 <br>4.   "", ""                       |        false       |
 
 ------
 ## Testdata:
-| Test | Testansvarig |                Metod               | Förväntad resultat | Verklig resultat | Godkänt/ Underkänt |
-|:----:|:------------:|------------------------------------|:------------------:|:----------------:|:------------------:|
-|  #1  |    dt222cc   |Lägg till ny person                 |        true        |       true       |       Godkänt      |
-|  #2  |    dt222cc   |Validering av data, korrekt format  |        true        |       true       |       Godkänt      |
-|  #3  |    dt222cc   |Validering av data, fel e-post      |        false       |       false      |       Godkänt      |
-|  #4  |    dt222cc   |Validering av data, fel lösenord    |        false       |       false      |       Godkänt      |
+| Test | Testansvarig |                Metod                | Förväntad resultat | Verklig resultat | Godkänt/ Underkänt |
+|:----:|:------------:|-------------------------------------|:------------------:|:----------------:|:------------------:|
+|  #1  |    dt222cc   | Lägg till ny person                 |        true        |       true       |       Godkänt      |
+|  #2  |    dt222cc   | Validering av data, korrekt format  |        true        |       true       |       Godkänt      |
+|  #3  |    dt222cc   | Validering av data, fel e-post      |        false       |       false      |       Godkänt      |
+|  #4  |    dt222cc   | Validering av data, fel lösenord    |        false       |       false      |       Godkänt      |
 
 ------
 ##Källkod:
 Källkod finns i mappen "testkod" i iterationsmappen "1".
+https://github.com/dt222cc/1dv404-dt222cc-laborationer/tree/master/Laboration%204/iteration1
